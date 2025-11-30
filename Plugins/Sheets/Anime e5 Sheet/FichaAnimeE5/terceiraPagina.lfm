@@ -1,0 +1,1607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmFichaAnimeE53_svg" align="client" theme="light" margins="{top=1; left=1; right=1; bottom=1}">
+    <style>#frmFichaAnimeE53_svg path {color: black; strokeColor: black; mode: stretch;} &#xD;
+#frmFichaAnimeE53_svg label {fontColor: black; textTrimming: none; wordWrap: false; autoSize: true;}</style>
+
+    <scrollBox align="client">
+        <layout left="150" top="0" width="750" height="926">
+            <rectangle width="750" height="926" color="white">&#xD;
+                <image left="0" top="0" width="750" height="926" src="elementos/borda1.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+
+
+                <!--Lista de Pericias-->
+                <!--Primeira Coluna-->
+                <label name="academiaNome" left="265" top="230" text="Academia" fontColor="black" fontSize="12"/>
+                <checkBox name="academiaProeficiencia" left="220" top="227" width="20" height="20" field="academiaProeficiencia" cursor="handPoint"/>
+                <edit name="academia" left="236" top="221" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="academia" transparent="true"/>
+                <button left="236" top="221" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.academia;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Academia");
+                    </event>
+                </button>
+
+                <label name="acrobaciaNome" left="265" top="250" text="Acrobacia" fontColor="black" fontSize="12"/>
+                <checkBox name="acrobaciaProeficiencia" left="220" top="247" width="20" height="20" field="acrobaciaProeficiencia" cursor="handPoint"/>
+                <edit name="acrobacia" left="236" top="241" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="acrobacia" transparent="true"/>
+                <button left="236" top="241" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.acrobacia;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Acrobacia");
+                    </event>
+                </button>
+
+                <label name="agriculturaNome" left="265" top="270" text="Agricultura" fontColor="black" fontSize="12"/>
+                <checkBox name="agriculturaProeficiencia" left="220" top="267" width="20" height="20" field="agriculturaProeficiencia" cursor="handPoint"/>
+                <edit name="agricultura" left="236" top="261" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="agricultura" transparent="true"/>
+                <button left="236" top="261" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.agricultura;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Agricultura");
+                    </event>
+                </button>
+
+                <label name="alquimiaNome" left="265" top="290" text="Alquimia" fontColor="black" fontSize="12"/>
+                <checkBox name="alquimiaProeficiencia" left="220" top="287" width="20" height="20" field="alquimiaProeficiencia" cursor="handPoint"/>
+                <edit name="alquimia" left="236" top="281" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="alquimia" transparent="true"/>
+                <button left="236" top="281" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.alquimia;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Alquimia");
+                    </event>
+                </button>
+
+                <label name="lidarcomanimaisNome" left="265" top="310" text="Lidar com Animais" fontColor="black" fontSize="12"/>
+                <checkBox name="lidarcomanimaisProeficiencia" left="220" top="307" width="20" height="20" field="lidarcomanimaisProeficiencia" cursor="handPoint"/>
+                <edit name="lidarcomanimais" left="236" top="301" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="lidarcomanimais" transparent="true"/>
+                <button left="236" top="301" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.lidarcomanimais;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Lidar com Animais");
+                    </event>
+                </button>
+
+                <label name="arcanismoNome" left="265" top="330" text="Arcanismo" fontColor="black" fontSize="12"/>
+                <checkBox name="arcanismoProeficiencia" left="220" top="327" width="20" height="20" field="arcanismoProeficiencia" cursor="handPoint"/>
+                <edit name="arcanismo" left="236" top="321" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="arcanismo" transparent="true"/>
+                <button left="236" top="321" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.arcanismo;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Arcanismo");
+                    </event>
+                </button>
+
+                <label name="arquiteturaNome" left="265" top="350" text="Arquitetura" fontColor="black" fontSize="12"/>
+                <checkBox name="arquiteturaProeficiencia" left="220" top="347" width="20" height="20" field="arquiteturaProeficiencia" cursor="handPoint"/>
+                <edit name="arquitetura" left="236" top="341" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="arquitetura" transparent="true"/>
+                <button left="236" top="341" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.arquitetura;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Arquitetura");
+                    </event>
+                </button>
+
+                <label name="conhecimentodeareaNome" left="265" top="370" text="Conhecimento de Área" fontColor="black" fontSize="12"/>
+                <checkBox name="conhecimentodeareaProeficiencia" left="220" top="367" width="20" height="20" field="conhecimentodeareaProeficiencia" cursor="handPoint"/>
+                <edit name="conhecimentodearea" left="236" top="361" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="conhecimentodearea" transparent="true"/>
+                <button left="236" top="361" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.conhecimentodearea;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Conhecimento de Área");
+                    </event>
+                </button>
+
+                <label name="artesanatoNome" left="265" top="390" text="Artesanato" fontColor="black" fontSize="12"/>
+                <checkBox name="artesanatoProeficiencia" left="220" top="387" width="20" height="20" field="artesanatoProeficiencia" cursor="handPoint"/>
+                <edit name="artesanato" left="236" top="381" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="artesanato" transparent="true"/>
+                <button left="236" top="381" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.artesanato;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Artesanato");
+                    </event>
+                </button>
+
+                <label name="atletismoNome" left="265" top="410" text="Atletismo" fontColor="black" fontSize="12"/>
+                <checkBox name="atletismoProeficiencia" left="220" top="407" width="20" height="20" field="atletismoProeficiencia" cursor="handPoint"/>
+                <edit name="atletismo" left="236" top="401" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="atletismo" transparent="true"/>
+                <button left="236" top="401" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.atletismo;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Atletismo");
+                    </event>
+                </button>
+
+                <label name="negociosNome" left="265" top="430" text="Negócios" fontColor="black" fontSize="12"/>
+                <checkBox name="negociosProeficiencia" left="220" top="427" width="20" height="20" field="negociosProeficiencia" cursor="handPoint"/>
+                <edit name="negocios" left="236" top="421" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="negocios" transparent="true"/>
+                <button left="236" top="421" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.negocios;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Negócios");
+                    </event>
+                </button>
+
+                <label name="escaladaNome" left="265" top="450" text="Escalada" fontColor="black" fontSize="12"/>
+                <checkBox name="escaladaProeficiencia" left="220" top="447" width="20" height="20" field="escaladaProeficiencia" cursor="handPoint"/>
+                <edit name="escalada" left="236" top="441" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="escalada" transparent="true"/>
+                <button left="236" top="441" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.escalada;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Escalada");
+                    </event>
+                </button>
+
+                <label name="respiracaocontroladaNome" left="265" top="470" text="Respiração Controlada" fontColor="black" fontSize="12"/>
+                <checkBox name="respiracaocontroladaProeficiencia" left="220" top="467" width="20" height="20" field="respiracaocontroladaProeficiencia" cursor="handPoint"/>
+                <edit name="respiracaocontrolada" left="236" top="461" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="respiracaocontrolada" transparent="true"/>
+                <button left="236" top="461" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.respiracaocontrolada;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Respiração Controlada");
+                    </event>
+                </button>
+
+                <label name="culturaNome" left="265" top="490" text="Cultura" fontColor="black" fontSize="12"/>
+                <checkBox name="culturaProeficiencia" left="220" top="487" width="20" height="20" field="culturaProeficiencia" cursor="handPoint"/>
+                <edit name="cultura" left="236" top="481" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="cultura" transparent="true"/>
+                <button left="236" top="481" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.cultura;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Cultura");
+                    </event>
+                </button>
+
+                <label name="enganacaoNome" left="265" top="510" text="Enganação" fontColor="black" fontSize="12"/>
+                <checkBox name="enganacaoProeficiencia" left="220" top="507" width="20" height="20" field="enganacaoProeficiencia" cursor="handPoint"/>
+                <edit name="enganacao" left="236" top="501" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="enganacao" transparent="true"/>
+                <button left="236" top="501" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.enganacao;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Enganação");
+                    </event>
+                </button>
+
+                <label name="disfarceNome" left="265" top="530" text="Disfarce" fontColor="black" fontSize="12"/>
+                <checkBox name="disfarceProeficiencia" left="220" top="527" width="20" height="20" field="disfarceProeficiencia" cursor="handPoint"/>
+                <edit name="disfarce" left="236" top="521" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="disfarce" transparent="true"/>
+                <button left="236" top="521" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.disfarce;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Disfarce");
+                    </event>
+                </button>
+
+                <label name="artesdomesticasNome" left="265" top="550" text="Artes Domésticas" fontColor="black" fontSize="12"/>
+                <checkBox name="artesdomesticasProeficiencia" left="220" top="547" width="20" height="20" field="artesdomesticasProeficiencia" cursor="handPoint"/>
+                <edit name="artesdomesticas" left="236" top="541" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="artesdomesticas" transparent="true"/>
+                <button left="236" top="541" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.artesdomesticas;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Artes Domésticas");
+                    </event>
+                </button>
+
+                <label name="empatiaNome" left="265" top="570" text="Empatia" fontColor="black" fontSize="12"/>
+                <checkBox name="empatiaProeficiencia" left="220" top="567" width="20" height="20" field="empatiaProeficiencia" cursor="handPoint"/>
+                <edit name="empatia" left="236" top="561" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="empatia" transparent="true"/>
+                <button left="236" top="561" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.empatia;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Empatia");
+                    </event>
+                </button>
+
+                <label name="engenhariaNome" left="265" top="590" text="Engenharia" fontColor="black" fontSize="12"/>
+                <checkBox name="engenhariaProeficiencia" left="220" top="587" width="20" height="20" field="engenhariaProeficiencia" cursor="handPoint"/>
+                <edit name="engenharia" left="236" top="581" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="engenharia" transparent="true"/>
+                <button left="236" top="581" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.engenharia;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Engenharia");
+                    </event>
+                </button>
+
+                <label name="etiquetaNome" left="265" top="610" text="Etiqueta" fontColor="black" fontSize="12"/>
+                <checkBox name="etiquetaProeficiencia" left="220" top="607" width="20" height="20" field="etiquetaProeficiencia" cursor="handPoint"/>
+                <edit name="etiqueta" left="236" top="601" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="etiqueta" transparent="true"/>
+                <button left="236" top="601" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.etiqueta;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Etiqueta");
+                    </event>
+                </button>
+
+                <label name="focoNome" left="265" top="630" text="Foco" fontColor="black" fontSize="12"/>
+                <checkBox name="focoProeficiencia" left="220" top="627" width="20" height="20" field="focoProeficiencia" cursor="handPoint"/>
+                <edit name="foco" left="236" top="621" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="foco" transparent="true"/>
+                <button left="236" top="621" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.foco;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Foco");
+                    </event>
+                </button>
+
+                <label name="falsificacaoNome" left="265" top="650" text="Falsificação" fontColor="black" fontSize="12"/>
+                <checkBox name="falsificacaoProeficiencia" left="220" top="647" width="20" height="20" field="falsificacaoProeficiencia" cursor="handPoint"/>
+                <edit name="falsificacao" left="236" top="641" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="falsificacao" transparent="true"/>
+                <button left="236" top="641" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.falsificacao;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Falsificação");
+                    </event>
+                </button>
+
+                <label name="jogosNome" left="265" top="670" text="Jogos" fontColor="black" fontSize="12"/>
+                <checkBox name="jogosProeficiencia" left="220" top="667" width="20" height="20" field="jogosProeficiencia" cursor="handPoint"/>
+                <edit name="jogos" left="236" top="661" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="jogos" transparent="true"/>
+                <button left="236" top="661" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.jogos;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Jogos");
+                    </event>
+                </button>
+
+                <label name="navegacaoembarcacaoNome" left="265" top="690" text="Navegação (Embarcação)" fontColor="black" fontSize="12"/>
+                <checkBox name="navegacaoembarcacaoProeficiencia" left="220" top="687" width="20" height="20" field="navegacaoembarcacaoProeficiencia" cursor="handPoint"/>
+                <edit name="navegacaoembarcacao" left="236" top="681" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="navegacaoembarcacao" transparent="true"/>
+                <button left="236" top="681" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.navegacaoembarcacao;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Navegação (Embarcação)");
+                    </event>
+                </button>
+
+                <label name="historiaNome" left="265" top="710" text="História" fontColor="black" fontSize="12"/>
+                <checkBox name="historiaProeficiencia" left="220" top="707" width="20" height="20" field="historiaProeficiencia" cursor="handPoint"/>
+                <edit name="historia" left="236" top="701" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="historia" transparent="true"/>
+                <button left="236" top="701" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.historia;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de História");
+                    </event>
+                </button>
+
+                <label name="intuicaoNome" left="265" top="730" text="Intuição" fontColor="black" fontSize="12"/>
+                <checkBox name="intuicaoProeficiencia" left="220" top="727" width="20" height="20" field="intuicaoProeficiencia" cursor="handPoint"/>
+                <edit name="intuicao" left="236" top="721" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="intuicao" transparent="true"/>
+                <button left="236" top="721" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.intuicao;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Intuição");
+                    </event>
+                </button>
+
+                <label name="interrogatorioNome" left="265" top="750" text="Interrogatório" fontColor="black" fontSize="12"/>
+                <checkBox name="interrogatorioProeficiencia" left="220" top="747" width="20" height="20" field="interrogatorioProeficiencia" cursor="handPoint"/>
+                <edit name="interrogatorio" left="236" top="741" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="interrogatorio" transparent="true"/>
+                <button left="236" top="741" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.interrogatorio;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Interrogatório");
+                    </event>
+                </button>
+
+                <label name="intimidacaoNome" left="265" top="770" text="Intimidação" fontColor="black" fontSize="12"/>
+                <checkBox name="intimidacaoProeficiencia" left="220" top="767" width="20" height="20" field="intimidacaoProeficiencia" cursor="handPoint"/>
+                <edit name="intimidacao" left="236" top="761" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="intimidacao" transparent="true"/>
+                <button left="236" top="761" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.intimidacao;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Intimidação");
+                    </event>
+                </button>
+
+                <label name="investigacaoNome" left="265" top="790" text="Investigação" fontColor="black" fontSize="12"/>
+                <checkBox name="investigacaoProeficiencia" left="220" top="787" width="20" height="20" field="investigacaoProeficiencia" cursor="handPoint"/>
+                <edit name="investigacao" left="236" top="781" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="investigacao" transparent="true"/>
+                <button left="236" top="781" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.investigacao;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Investigação");
+                    </event>
+                </button>
+
+                <label name="direitoNome" left="265" top="810" text="Direito" fontColor="black" fontSize="12"/>
+                <checkBox name="direitoProeficiencia" left="220" top="807" width="20" height="20" field="direitoProeficiencia" cursor="handPoint"/>
+                <edit name="direito" left="236" top="801" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="direito" transparent="true"/>
+                <button left="236" top="801" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.direito;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Direito");
+                    </event>
+                </button>
+
+
+                <!--Segunda Coluna-->
+                <label name="liderancaNome" left="508" top="230" text="Liderança" fontColor="black" fontSize="12"/>
+                <checkBox name="liderancaProeficiencia" left="463" top="227" width="20" height="20" field="liderancaProeficiencia" cursor="handPoint"/>
+                <edit name="lideranca" left="479" top="221" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="lideranca" transparent="true"/>
+                <button left="479" top="221" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.lideranca;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Liderança");
+                    </event>
+                </button>
+
+                <label name="medicinaNome" left="508" top="250" text="Medicina" fontColor="black" fontSize="12"/>
+                <checkBox name="medicinaProeficiencia" left="463" top="247" width="20" height="20" field="medicinaProeficiencia" cursor="handPoint"/>
+                <edit name="medicina" left="479" top="241" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="medicina" transparent="true"/>
+                <button left="479" top="241" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.medicina;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Medicina");
+                    </event>
+                </button>
+
+                <label name="mineracaoNome" left="508" top="270" text="Mineração" fontColor="black" fontSize="12"/>
+                <checkBox name="mineracaoProeficiencia" left="463" top="267" width="20" height="20" field="mineracaoProeficiencia" cursor="handPoint"/>
+                <edit name="mineracao" left="479" top="261" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="mineracao" transparent="true"/>
+                <button left="479" top="261" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.mineracao;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Mineração");
+                    </event>
+                </button>
+
+                <label name="naturezaNome" left="508" top="290" text="Natureza" fontColor="black" fontSize="12"/>
+                <checkBox name="naturezaProeficiencia" left="463" top="287" width="20" height="20" field="naturezaProeficiencia" cursor="handPoint"/>
+                <edit name="natureza" left="479" top="281" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="natureza" transparent="true"/>
+                <button left="479" top="281" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.natureza;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Natureza");
+                    </event>
+                </button>
+
+                <label name="navegacaoNome" left="508" top="310" text="Navegação" fontColor="black" fontSize="12"/>
+                <checkBox name="navegacaoProeficiencia" left="463" top="307" width="20" height="20" field="navegacaoProeficiencia" cursor="handPoint"/>
+                <edit name="navegacao" left="479" top="301" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="navegacao" transparent="true"/>
+                <button left="479" top="301" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.navegacao;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Navegação");
+                    </event>
+                </button>
+
+                <label name="percepcaoNome" left="508" top="330" text="Percepção" fontColor="black" fontSize="12"/>
+                <checkBox name="percepcaoProeficiencia" left="463" top="327" width="20" height="20" field="percepcaoProeficiencia" cursor="handPoint"/>
+                <edit name="percepcao" left="479" top="321" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="percepcao" transparent="true"/>
+                <button left="479" top="321" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.percepcao;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Percepção");
+                    </event>
+                </button>
+
+                <label name="performanceNome" left="508" top="350" text="Performance" fontColor="black" fontSize="12"/>
+                <checkBox name="performanceProeficiencia" left="463" top="347" width="20" height="20" field="performanceProeficiencia" cursor="handPoint"/>
+                <edit name="performance" left="479" top="341" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="performance" transparent="true"/>
+                <button left="479" top="341" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.performance;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Performance");
+                    </event>
+                </button>
+
+                <label name="persuasaoNome" left="508" top="370" text="Persuasão" fontColor="black" fontSize="12"/>
+                <checkBox name="persuasaoProeficiencia" left="463" top="367" width="20" height="20" field="persuasaoProeficiencia" cursor="handPoint"/>
+                <edit name="persuasao" left="479" top="361" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="persuasao" transparent="true"/>
+                <button left="479" top="361" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.persuasao;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Persuasão");
+                    </event>
+                </button>
+
+                <label name="fisicaNome" left="508" top="390" text="Física" fontColor="black" fontSize="12"/>
+                <checkBox name="fisicaProeficiencia" left="463" top="387" width="20" height="20" field="fisicaProeficiencia" cursor="handPoint"/>
+                <edit name="fisica" left="479" top="381" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="fisica" transparent="true"/>
+                <button left="479" top="381" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.fisica;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Física");
+                    </event>
+                </button>
+
+                <label name="religiaoNome" left="508" top="410" text="Religião" fontColor="black" fontSize="12"/>
+                <checkBox name="religiaoProeficiencia" left="463" top="407" width="20" height="20" field="religiaoProeficiencia" cursor="handPoint"/>
+                <edit name="religiao" left="479" top="401" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="religiao" transparent="true"/>
+                <button left="479" top="401" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.religiao;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Religião");
+                    </event>
+                </button>
+
+                <label name="montariaNome" left="508" top="430" text="Montaria" fontColor="black" fontSize="12"/>
+                <checkBox name="montariaProeficiencia" left="463" top="427" width="20" height="20" field="montariaProeficiencia" cursor="handPoint"/>
+                <edit name="montaria" left="479" top="421" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="montaria" transparent="true"/>
+                <button left="479" top="421" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.montaria;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Montaria");
+                    </event>
+                </button>
+
+                <label name="seducaoNome" left="508" top="450" text="Sedução" fontColor="black" fontSize="12"/>
+                <checkBox name="seducaoProeficiencia" left="463" top="447" width="20" height="20" field="seducaoProeficiencia" cursor="handPoint"/>
+                <edit name="seducao" left="479" top="441" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="seducao" transparent="true"/>
+                <button left="479" top="441" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.seducao;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Sedução");
+                    </event>
+                </button>
+
+                <label name="prestidigitacaoNome" left="508" top="470" text="Prestidigitação" fontColor="black" fontSize="12"/>
+                <checkBox name="prestidigitacaoProeficiencia" left="463" top="467" width="20" height="20" field="prestidigitacaoProeficiencia" cursor="handPoint"/>
+                <edit name="prestidigitacao" left="479" top="461" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="prestidigitacao" transparent="true"/>
+                <button left="479" top="461" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.prestidigitacao;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Prestidigitação");
+                    </event>
+                </button>
+
+                <label name="furtividadeNome" left="508" top="490" text="Furtividade" fontColor="black" fontSize="12"/>
+                <checkBox name="furtividadeProeficiencia" left="463" top="487" width="20" height="20" field="furtividadeProeficiencia" cursor="handPoint"/>
+                <edit name="furtividade" left="479" top="481" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="furtividade" transparent="true"/>
+                <button left="479" top="481" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.furtividade;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Furtividade");
+                    </event>
+                </button>
+
+                <label name="instintourbanoNome" left="508" top="510" text="Instinto Urbano" fontColor="black" fontSize="12"/>
+                <checkBox name="instintourbanoProeficiencia" left="463" top="507" width="20" height="20" field="instintourbanoProeficiencia" cursor="handPoint"/>
+                <edit name="instintourbano" left="479" top="501" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="instintourbano" transparent="true"/>
+                <button left="479" top="501" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.instintourbano;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Instinto Urbano");
+                    </event>
+                </button>
+
+                <label name="sobrevivenciaNome" left="508" top="530" text="Sobrevivência" fontColor="black" fontSize="12"/>
+                <checkBox name="sobrevivenciaProeficiencia" left="463" top="527" width="20" height="20" field="sobrevivenciaProeficiencia" cursor="handPoint"/>
+                <edit name="sobrevivencia" left="479" top="521" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="sobrevivencia" transparent="true"/>
+                <button left="479" top="521" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.sobrevivencia;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Sobrevivência");
+                    </event>
+                </button>
+
+                <label name="natacaoNome" left="508" top="550" text="Natação" fontColor="black" fontSize="12"/>
+                <checkBox name="natacaoProeficiencia" left="463" top="547" width="20" height="20" field="natacaoProeficiencia" cursor="handPoint"/>
+                <edit name="natacao" left="479" top="541" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="natacao" transparent="true"/>
+                <button left="479" top="541" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.natacao;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Natação");
+                    </event>
+                </button>
+
+                <label name="armadilhasNome" left="508" top="570" text="Armadilhas" fontColor="black" fontSize="12"/>
+                <checkBox name="armadilhasProeficiencia" left="463" top="567" width="20" height="20" field="armadilhasProeficiencia" cursor="handPoint"/>
+                <edit name="armadilhas" left="479" top="561" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="armadilhas" transparent="true"/>
+                <button left="479" top="561" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.armadilhas;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Armadilhas");
+                    </event>
+                </button>
+
+                <label name="artesvisuaisNome" left="508" top="590" text="Artes Visuais" fontColor="black" fontSize="12"/>
+                <checkBox name="artesvisuaisProeficiencia" left="463" top="587" width="20" height="20" field="artesvisuaisProeficiencia" cursor="handPoint"/>
+                <edit name="artesvisuais" left="479" top="581" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="artesvisuais" transparent="true"/>
+                <button left="479" top="581" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.artesvisuais;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Artes Visuais");
+                    </event>
+                </button>
+
+                <label name="guerraNome" left="508" top="610" text="Guerra" fontColor="black" fontSize="12"/>
+                <checkBox name="guerraProeficiencia" left="463" top="607" width="20" height="20" field="guerraProeficiencia" cursor="handPoint"/>
+                <edit name="guerra" left="479" top="601" width="30" height="30" horzTextAlign="center" enabled="false" fontColor="black" fontStyle="bold underline" fontSize="14" field="guerra" transparent="true"/>
+                <button left="479" top="601" width="30" height="30" opacity="0" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        local resultado = sheet.guerra;
+                        mesaDoPersonagem.chat:rolarDados("1d20" .. resultado, "Teste de Guerra");
+                    </event>
+                </button>
+            </rectangle>
+        </layout>
+
+
+        <!--Modos-->
+        <layout left="900" top="0" width="750" height="926">
+            <rectangle width="750" height="926" color="white">&#xD;
+                <image left="0" top="0" width="450" height="626" src="elementos/borda2.png" style="stretch" optimize="true" compilerOrder="0"/>&#xD;
+
+                <edit name="modo1" left="180" top="140" width="150" height="30" horzTextAlign="leading" fontStyle="bold" fontColor="black" fontSize="14" field="modo1"/>
+                <button name="ativarModo1" left="120" top="140" width="50" height="30" text="Ativar" fontStyle="bold" fontColor="black" fontSize="12" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        if (sheet.modo1 == nil) then
+                            showMessage("O Vacilão, esqueçeu de preencher o campo");
+                        else
+                            mesaDoPersonagem.chat:enviarMensagem("**" .. sheet.nomePersonagem .. "**" .. " entrou no Modo " .. "**" .. sheet.modo1 .. "**");
+                        end
+                    </event>
+                </button>
+                <edit name="modo2" left="180" top="180" width="150" height="30" horzTextAlign="leading" fontStyle="bold" fontColor="black" fontSize="14" field="modo2"/>
+                <button name="ativarModo2" left="120" top="180" width="50" height="30" text="Ativar" fontStyle="bold" fontColor="black" fontSize="12" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        if (sheet.modo2 == nil) then
+                            showMessage("O Vacilão, esqueçeu de preencher o campo");
+                        else
+                            mesaDoPersonagem.chat:enviarMensagem("**" .. sheet.nomePersonagem .. "**" .. " entrou no Modo " .. "**" .. sheet.modo2 .. "**");
+                        end
+                    </event>
+                </button>
+                <edit name="modo3" left="180" top="220" width="150" height="30" horzTextAlign="leading" fontStyle="bold" fontColor="black" fontSize="16" field="modo3"/>
+                <button name="ativarModo3" left="120" top="220" width="50" height="30" text="Ativar" fontStyle="bold" fontColor="black" fontSize="12" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        if (sheet.modo3 == nil) then
+                            showMessage("O Vacilão, esqueçeu de preencher o campo");
+                        else
+                            mesaDoPersonagem.chat:enviarMensagem("**" .. sheet.nomePersonagem .. "**" .. " entrou no Modo " .. "**" .. sheet.modo3 .. "**");
+                        end
+                    </event>
+                </button>
+                <edit name="modo4" left="180" top="260" width="150" height="30" horzTextAlign="leading" fontStyle="bold" fontColor="black" fontSize="16" field="modo4"/>
+                <button name="ativarModo4" left="120" top="260" width="50" height="30" text="Ativar" fontStyle="bold" fontColor="black" fontSize="12" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        if (sheet.modo4 == nil) then
+                            showMessage("O Vacilão, esqueçeu de preencher o campo");
+                        else
+                            mesaDoPersonagem.chat:enviarMensagem("**" .. sheet.nomePersonagem .. "**" .. " entrou no Modo " .. "**" .. sheet.modo4 .. "**");
+                        end
+                    </event>
+                </button>
+                <edit name="modo5" left="180" top="300" width="150" height="30" horzTextAlign="leading" fontStyle="bold" fontColor="black" fontSize="16" field="modo5"/>
+                <button name="ativarModo5" left="120" top="300" width="50" height="30" text="Ativar" fontStyle="bold" fontColor="black" fontSize="12" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        if (sheet.modo5 == nil) then
+                            showMessage("O Vacilão, esqueçeu de preencher o campo");
+                        else
+                            mesaDoPersonagem.chat:enviarMensagem("**" .. sheet.nomePersonagem .. "**" .. " entrou no Modo " .. "**" .. sheet.modo5 .. "**");
+                        end
+                    </event>
+                </button>
+                <edit name="modo6" left="180" top="340" width="150" height="30" horzTextAlign="leading" fontStyle="bold" fontColor="black" fontSize="16" field="modo6"/>
+                <button name="ativarModo6" left="120" top="340" width="50" height="30" text="Ativar" fontStyle="bold" fontColor="black" fontSize="12" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        if (sheet.modo6 == nil) then
+                            showMessage("O Vacilão, esqueçeu de preencher o campo");
+                        else
+                            mesaDoPersonagem.chat:enviarMensagem("**" .. sheet.nomePersonagem .. "**" .. " entrou no Modo " .. "**" .. sheet.modo6 .. "**");
+                        end
+                    </event>
+                </button>
+                <edit name="modo7" left="180" top="380" width="150" height="30" horzTextAlign="leading" fontStyle="bold" fontColor="black" fontSize="16" field="modo7"/>
+                <button name="ativarModo7" left="120" top="380" width="50" height="30" text="Ativar" fontStyle="bold" fontColor="black" fontSize="12" cursor="handPoint">
+                    <event name="onClick">
+                        local mesaDoPersonagem = Firecast.getMesaDe(sheet);
+                        if (sheet.modo7 == nil) then
+                            showMessage("O Vacilão, esqueçeu de preencher o campo");
+                        else
+                            mesaDoPersonagem.chat:enviarMensagem("**" .. sheet.nomePersonagem .. "**" .. " entrou no Modo " .. "**" .. sheet.modo7 .. "**");
+                        end
+                    </event>
+                </button>
+            </rectangle>
+        </layout>
+    </scrollBox>
+
+
+    <!--Lista de Pericias (Backend)-->
+    <dataLink field="academiaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.academiaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.academia = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="acrobaciaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.destrezaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.acrobaciaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.acrobacia = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="agriculturaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.sabedoriaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.agriculturaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.agricultura = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="alquimiaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.alquimiaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.alquimia = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="lidarcomanimaisProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.sabedoriaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.lidarcomanimaisProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.lidarcomanimais = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="arcanismoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.arcanismoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.arcanismo = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="arquiteturaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.arquiteturaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.arquitetura = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="conhecimentodeareaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.conhecimentodeareaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.conhecimentodearea = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="artesanatoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.destrezaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.artesanatoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.artesanato = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="atletismoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.forcaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.atletismoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.atletismo = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="negociosProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.negociosProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.negocios = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="escaladaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.destrezaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.escaladaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.escalada = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="respiracaocontroladaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.constituicaoModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.respiracaocontroladaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.respiracaocontrolada = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="culturaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.culturaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.cultura = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="enganacaoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.carismaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.enganacaoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.enganacao = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="disfarceProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.carismaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.disfarceProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.disfarce = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="artesdomesticasProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.sabedoriaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.artesdomesticasProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.artesdomesticas = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="empatiaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.carismaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.empatiaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.empatia = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="engenhariaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.engenhariaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.engenharia = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="etiquetaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.carismaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.etiquetaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.etiqueta = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="focoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.sabedoriaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.focoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.foco = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="falsificacaoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.destrezaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.falsificacaoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.falsificacao = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="jogosProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.sabedoriaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.jogosProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.jogos = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="navegacaoembarcacaoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.destrezaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.navegacaoembarcacaoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.navegacaoembarcacao = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="historiaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.historiaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.historia = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="intuicaoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.sabedoriaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.intuicaoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.intuicao = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="interrogatorioProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.sabedoriaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.interrogatorioProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.interrogatorio = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="intimidacaoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.carismaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.intimidacaoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.intimidacao = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="investigacaoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.investigacaoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.investigacao = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="direitoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.direitoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.direito = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="liderancaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.carismaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.liderancaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.lideranca = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="medicinaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.sabedoriaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.medicinaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.medicina = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="mineracaoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.mineracaoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.mineracao = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="naturezaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.naturezaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.natureza = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="navegacaoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.navegacaoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.navegacao = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="percepcaoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.sabedoriaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.percepcaoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.percepcao = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="performanceProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.carismaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.performanceProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.performance = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="persuasaoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.carismaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.persuasaoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.persuasao = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="fisicaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.fisicaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.fisica = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="religiaoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.inteligenciaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.religiaoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.religiao = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="montariaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.destrezaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.montariaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.montaria = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="seducaoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.carismaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.seducaoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.seducao = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="prestidigitacaoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.destrezaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.prestidigitacaoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.prestidigitacao = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="furtividadeProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.destrezaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.furtividadeProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.furtividade = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="instintourbanoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.carismaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.instintourbanoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.instintourbano = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="sobrevivenciaProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.sabedoriaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.sobrevivenciaProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.sobrevivencia = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="natacaoProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.constituicaoModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.natacaoProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.natacao = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="armadilhasProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.destrezaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.armadilhasProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.armadilhas = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="artesvisuaisProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.sabedoriaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.artesvisuaisProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.artesvisuais = resultadoFormatado;
+        </event>
+    </dataLink>
+    <dataLink field="guerraProeficiencia">
+        <event name="onChange">
+            local modificadorNumerico = tonumber(sheet.sabedoriaModificador) or 0;
+            local bonusNumerico = tonumber(sheet.bonusProeficiencia) or 0;
+            local resultado;
+            if sheet.guerraProeficiencia then
+                resultado = modificadorNumerico + bonusNumerico;
+            else
+                resultado = modificadorNumerico;
+            end;
+            local resultadoFormatado;
+            if resultado >= 0 then
+                resultadoFormatado = "+" .. resultado;
+            else
+                resultadoFormatado = tostring(resultado);
+            end
+            sheet.guerra = resultadoFormatado;
+        </event>
+    </dataLink>
+</form>
